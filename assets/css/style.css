@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -385,9 +385,9 @@ background-position-x: right;
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 96px;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 112px;
 /*  color: #fff;*/
   color: #444444;
 }
@@ -400,7 +400,15 @@ background-position-x: right;
 /*  color: rgba(255, 255, 255, 0.8);*/
   color: rgba(44, 44, 44, 0.8);
   margin-bottom: 30px;
-  font-size: 24px;
+  font-size: 56px;
+  font-family: 'Shadows Into Light Two',handwriting;
+  text-align: left;
+  width: 75%;
+  margin-left: 375px;
+}
+
+#hero h2 span {
+    margin-left: 150px;
 }
 
 #hero .btn-get-started {
