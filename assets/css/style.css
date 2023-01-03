@@ -399,16 +399,25 @@ background-position-x: right;
 #hero h2 {
 /*  color: rgba(255, 255, 255, 0.8);*/
   color: rgba(44, 44, 44, 0.8);
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-size: 56px;
   font-family: 'Shadows Into Light Two',handwriting;
   text-align: left;
-  width: 75%;
+  /*width: 75%;*/
   margin-left: 375px;
 }
 
 #hero h2 span {
     margin-left: 150px;
+}
+
+#hero div.logo {
+    text-align: right;
+    margin-right: 185px;
+}
+
+#hero div.logo img {
+    max-width: 7.5%;
 }
 
 #hero .btn-get-started {
