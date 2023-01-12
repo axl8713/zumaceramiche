@@ -392,18 +392,24 @@ background-position-x: right;
   margin-bottom: 10px;
   font-size: 56px;
   font-family: 'Shadows Into Light Two',handwriting;
-  text-align: left;
+/*  text-align: left;*/
   /*width: 75%;*/
-  margin-left: 375px;
+/*  margin-left: 375px;*/
 }
 
-#hero h2 span {
-    margin-left: 150px;
+#hero_sub_hi {
+    text-align: left;
+    margin-left: 25%;
+}
+
+#hero_sub_low {
+    text-align: right;
+    margin-right: 15%;
 }
 
 #hero div.logo {
     text-align: right;
-    margin-right: 185px;
+    margin-right: 11%;
 }
 
 #hero div.logo img {
@@ -428,19 +434,43 @@ background-position-x: right;
   background: #4ea5e0;
 }
 
-@media (max-width: 992px) {
-  #hero {
-    height: calc(100vh - 70px);
-  }
-}
 
-@media (max-width: 768px) {
-    #container {
-        background-position-x: -58%;
+@media (max-width: 575px) {
+    #hero h1 {
+        font-size: 30px;
+        line-height: 36px;
     }
 
+  #hero h2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
 
-#hero:before {
+@media (min-width: 576px) and (max-width:991px) {
+    #hero h1 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+  #hero h2 {
+        font-size: 24px;
+/*        line-height: 30px;*/
+    }
+}
+
+
+@media (max-width: 991px) {
+
+    #container {
+        background-position-x: 83%;
+    }
+
+  #hero {
+        height: calc(100vh - 70px);
+    }
+
+ #hero:before {
         content: "";
         background: rgba(56, 64, 70, 0.5);
         position: absolute;
@@ -452,29 +482,33 @@ background-position-x: right;
     }
 
     #hero h1 {
-        font-size: 30px;
-        line-height: 36px;
+/*        font-size: 30px;*/
+/*        line-height: 36px;*/
         color: #c4bcb8;
     }
 
   #hero h2 {
-        font-size: 18px;
-        line-height: 24px;
+/*        font-size: 18px;*/
+/*        line-height: 24px;*/
         /*    margin-bottom: 30px;*/
-    margin-left: 120px;
-    color: #fff8f4;
+/*    margin-left: 120px;*/
+/*    color: #fff8f4;*/
     }
 
-  #hero h2 span {
-        margin-left: 50px;
+  #hero_sub_hi {
+        margin-left: 35%;
     }
 
-#hero div.logo {
-        margin-right:30px;
+    #herosub_low {
+        margin-right: 21%;
     }
 
-#hero div.logo img {
-        max-width: 12.5%;
+    #hero div.logo {
+        margin-right: 12%;
+    }
+
+    #hero div.logo img {
+        max-width: 6%;
     }
 }
 
