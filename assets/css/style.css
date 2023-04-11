@@ -129,7 +129,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -241,7 +241,7 @@ h6 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #384046;
@@ -398,22 +398,20 @@ background-position-x: right;
 }
 
 #hero_sub_hi {
-    text-align: left;
-    margin-left: 25%;
+    /*text-align: left;*/
+    /*margin-left: 25%;*/
 }
 
 #hero_sub_low {
-    text-align: right;
-    margin-right: 15%;
+    margin-left: 5%;
 }
 
 #hero div.logo {
-    text-align: right;
-    margin-right: 11%;
+    margin-left: 47.5%;
 }
 
 #hero div.logo img {
-    max-width: 7.5%;
+    max-height: 67px;
 }
 
 #hero .btn-get-started {
@@ -437,12 +435,12 @@ background-position-x: right;
 
 @media (max-width: 575px) {
     #hero h1 {
-        font-size: 30px;
+        font-size: 32px;
         line-height: 36px;
     }
 
   #hero h2 {
-        font-size: 18px;
+        font-size: 21px;
         line-height: 24px;
     }
 }
@@ -459,18 +457,22 @@ background-position-x: right;
     }
 }
 
-
 @media (max-width: 991px) {
 
-    #container {
-        background-position-x: 83%;
-    }
+   #container {
+       background-position-x: 83%;
+       padding-left:20px;
+   }
 
-  #hero {
+   #main .container {
+   }
+
+    #hero {
         height: calc(100vh - 70px);
     }
 
  #hero:before {
+ /*
         content: "";
         background: rgba(56, 64, 70, 0.5);
         position: absolute;
@@ -479,12 +481,13 @@ background-position-x: right;
         left: 0;
         right: 0;
         height: 525px;
+*/
     }
 
     #hero h1 {
 /*        font-size: 30px;*/
 /*        line-height: 36px;*/
-        color: #c4bcb8;
+/*        color: #c4bcb8;*/
     }
 
   #hero h2 {
@@ -496,19 +499,19 @@ background-position-x: right;
     }
 
   #hero_sub_hi {
-        margin-left: 35%;
+        /*margin-left: 35%;*/
     }
 
-    #herosub_low {
+    #hero_sub_low {
         margin-right: 21%;
     }
 
     #hero div.logo {
-        margin-right: 12%;
+        margin-left: 62%
     }
 
     #hero div.logo img {
-        max-width: 6%;
+        max-height: 27px;
     }
 }
 
@@ -1507,11 +1510,29 @@ section {
 }
 
 @media (max-width: 768px) {
+#footer::after {
+        z-index:-2;
+        content: "";
+        display:block;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left: -20px;
+        width: calc(100% + 20px);
+        background: rgba(56, 64, 70, 0.5);
+    }
+
     #footer {
-/*        color: #c4bcb8;*/
+    z-index:2;
+                color: #fff8f4;
+    position:relative;
     }
 
 #footer .footer-top .footer-contact p {
-/*        color: #fff8f4;*/
+        color: #fff8f4;
+    }
+
+    #footer .copyright {
+        text-align: left;
     }
 }
