@@ -641,6 +641,32 @@ section {
     --bs-nav-tabs-link-active-color: #ff0000;
 }
 
+/*--------------------------------------------------------------
+# GALLERY
+--------------------------------------------------------------*/
+
+.gallery-img {
+    cursor: pointer;
+    transition: transform .2s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.03);
+}
+
+.modal-dialog {
+    max-width: 800px;
+    width: auto;
+    margin: 1.5rem auto;
+}
+
+@media (max-width: 991px) {
+    .modal-dialog {
+        max-width: 90vw;
+    }
+}
+
+
 .what-we-do .icon-box {
     text-align: center;
     padding: 30px 20px;
